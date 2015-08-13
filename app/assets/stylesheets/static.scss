@@ -1,0 +1,31 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$blue: #3498db;
+
+.blue {
+  color: $blue !important;
+}
+
+a {
+  color: black !important;
+  &:hover {
+    color: $blue !important;
+    text-decoration: none;
+  }
+  transition: color 175ms ease-out;
+}
+
+.modern-button {
+  padding: 12px;
+  border: 2px solid black;
+  border-radius: 15px;
+  &:hover {
+    border: 2px solid $blue !important;
+  }
+  transition: color 175ms ease-out;
+}
+
+.big-top {
+  margin-top: 55px;
+}
