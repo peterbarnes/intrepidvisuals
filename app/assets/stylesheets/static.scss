@@ -14,6 +14,10 @@ a {
     text-decoration: none;
   }
   transition: color 175ms ease-out;
+  &:active {
+    color: $blue !important;
+    text-decoration: none; 
+  }
 }
 
 .modern-button {
@@ -28,4 +32,51 @@ a {
 
 .big-top {
   margin-top: 55px;
+}
+
+.header {
+  border-bottom: 1px solid black;
+}
+
+.pad-bottom {
+  padding-bottom: 20px;
+}
+
+.blue-link {
+  color: $blue !important;
+  &:hover {
+    color: black !important;
+  }
+}
+
+.mainwrapper {
+  background-color: white;
+  min-height: 100% !important;
+  margin: 0 auto -54px;
+}
+
+.footer, .push {
+  bottom: 0px !important;
+  height: 54px;
+}
+
+.footer {
+  position: fixed;
+  width: 100% !important;
+  background-color: white;
+  padding-top: 5px;
+  .soc-links {
+    letter-spacing: 25px;
+    text-align: center;
+    margin: 0px !important;
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+}
+
+.pad-for-footer {
+  margin-bottom: 54px;
 }

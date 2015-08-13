@@ -1,8 +1,8 @@
 class StaticController < ApplicationController
   def root
-    
+    render :layout => 'root'
   end
-  
+
   def home
     
   end
@@ -12,6 +12,10 @@ class StaticController < ApplicationController
   end
 
   def video
+    
+  end
+
+  def seniors
     
   end
 

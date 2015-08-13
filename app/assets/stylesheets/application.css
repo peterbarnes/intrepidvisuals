@@ -12,6 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require owl.carousel
+ *= require owl.theme
  */
 
  body, html {
@@ -38,6 +40,21 @@
 
 .title {
   font-size: 50px;
+}
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 100%; 
+    padding: 10px; 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
 }
 
 /*ANIMATE*/
