@@ -25,6 +25,18 @@
   font-weight: 200 !important;
  }
 
+ .big-title {
+  font-family: 'Roboto Slab' !important;
+  color: #3498DB !important;
+  transition: color 175ms ease-out;
+  font-size: 125px !important;
+ }
+
+ .big-title:hover {
+  color: black !important;
+  transition: color 175ms ease-out;
+ }
+
  #wrapper {
 
  width:500px;

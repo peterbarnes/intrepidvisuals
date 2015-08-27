@@ -35,7 +35,6 @@ a {
 }
 
 .header {
-  border-bottom: 1px solid black;
 }
 
 .pad-bottom {
@@ -79,4 +78,19 @@ a {
 
 .pad-for-footer {
   margin-bottom: 54px;
+}
+
+.navbar {
+  background-color: white !important;
+  border: 0px !important;
+  a {
+    color: black !important;
+    &:hover {
+      color: $blue !important;
+    }
+  }
+}
+
+.changecolor:hover {
+  background-color: darken(white, 10%) !important;
 }

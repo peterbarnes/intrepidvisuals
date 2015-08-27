@@ -2,16 +2,30 @@
 %head
   %title Intrepid Visuals
   %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Raleway:400,200' }
+  %link{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Slab:700' }
   %link{ rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' }
+  %link{ href: "/monosocialiconsfont-master/sample project/stylesheets.css", rel: "stylesheet" }
+  %link{ href: "/source/jquery.fancybox.css", rel: "stylesheet" }
+  %link{ href: "/source/helpers/jquery.fancybox-buttons.css", rel: "stylesheet" }
+  %link{ href: "/source/helpers/jquery.fancybox-thumbs.css", rel: "stylesheet" }
   %link{ href: "/monosocialiconsfont-master/sample project/stylesheets.css", rel: "stylesheet" }
   = stylesheet_link_tag    'application', media: 'all'
   = javascript_include_tag 'application'
+  %script{ src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js" }
+  %script{ src: "/source/jquery.fancybox.pack.js" }
+  %script{ src: "/source/helpers/jquery.fancybox-media.js" }
+  %script{ src: "/source/helpers/jquery.fancybox-buttons.js" }
+  %script{ src: "/source/helpers/jquery.fancybox-thumbs.js" }
   %script{ src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js' }
   = csrf_meta_tags
   %meta{ name: 'google-site-verification', content: 'RzHivMFeO90EQ_zcUMU6y_LskLaHQEkafRAR5vj-Nks' }
 %body.clearfix
   .mainwrapper.clearfix
     = render 'layouts/header'
-    .container-fluid.pad-for-footer.clearfix
+    .container.pad-for-footer.clearfix
       = yield
   = render 'layouts/footer'
+  :javascript
+    $(document).ready(function() {
+      $(".fancybox").fancybox();
+    });

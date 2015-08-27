@@ -1,13 +1,17 @@
 class StaticController < ApplicationController
-  def root
-    render :layout => 'root'
-  end
-
   def home
     
   end
 
-  def photo
+  def events
+    
+  end
+
+  def portraits
+    
+  end
+
+  def landscape
     
   end
 
@@ -20,6 +24,10 @@ class StaticController < ApplicationController
   end
 
   def contact
+    
+  end
+
+  def about
     
   end
 end

@@ -16,16 +16,21 @@
 //= require owl.carousel
 
 $(document).ready(function(){
-
-$("#slideshow > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slideshow > div:first')
-    .fadeOut(1700)
-    .next()
-    .fadeIn(1700)
-    .end()
-    .appendTo('#slideshow');
-},  5000);
-
+  
 });
+
+(function() {
+  var quotes = [
+    {
+      text: "HEY"
+    },
+    {
+      text: "HELLO"
+    }
+  ];
+  var quote = quotes[Math.floor(Math.random() * quotes.length)];
+  document.getElementById("quote").innerHTML =
+    '<h1 class="big-title text-center">' + quote.text + '</h1>';
+})();
+
+          
