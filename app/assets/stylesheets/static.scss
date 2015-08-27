@@ -94,3 +94,11 @@ a {
 .changecolor:hover {
   background-color: darken(white, 10%) !important;
 }
+
+.pad-image {
+  margin-bottom: 30px !important;
+}
+
+.border-blue {
+  border: 7px solid $blue;
+}
