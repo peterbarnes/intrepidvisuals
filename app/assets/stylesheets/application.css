@@ -37,6 +37,10 @@
   transition: color 175ms ease-out;
  }
 
+ p {
+  font-weight: 400 !important;
+ }
+
  #wrapper {
 
  width:500px;
