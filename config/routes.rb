@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   match '/landscape', to: 'static#landscape', via: 'get'
   match '/video',     to: 'static#video',     via: 'get'
   match '/seniors',   to: 'static#seniors',   via: 'get'
-  match '/contact',   to: 'static#contact',   via: 'get' 
   match '/about',     to: 'static#about',     via: 'get'
+  match '/contact',   to: 'contacts#new',      via: 'get' 
+  resources "contacts", only: [:new, :create]
 end

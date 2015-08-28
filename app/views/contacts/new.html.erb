@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+      <div class="mailform">
+        <p>Hey! &nbsp;Feel free to send us an email at any time about your project, or if you just want to talk! &nbsp;Please check your spam/junk folder for our reply, we will try to get back to you within 24 hours! </p>
+        <p>If the email form gives you any issues, please email peterb@intrepidvisuals.com!</p>
+
+        <%= simple_form_for @contact, :html => {:class => 'form-horizontal center-block' } do |f| %>
+          <%= f.input :name, :required => true, placeholder: "Name", label: false, input_html: { class: 'center-block' } %>
+          <%= f.input :email, :required => true, placeholder: "Email", label: false, input_html: { class: "center-block" } %>
+          <%= f.input :message, :as => :text, :required => true, placeholder: "Message", label: false, input_html: { class: "center-block" } %>
+          <div class="hidden">
+            <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+          </div>
+          <div>
+            </br>
+            <%= f.button :submit, 'Send message', :class => "btn btn-primary send-button center-block" %>
+          </div>
+        <% end %>
+      </div>
+  </div>
+</div>

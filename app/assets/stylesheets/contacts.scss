@@ -1,0 +1,86 @@
+// Place all the styles related to the contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$blue: #3498db;
+$bg: white;
+.hidden { display: none; }
+
+/*flash*/
+
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-message {
+  padding: 15px;
+  border: 1px solid $blue;
+  border-radius: 8px;
+  color: $blue !important;
+}
+
+input#contact_name, input#contact_email, textarea#contact_message {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 70%;
+  border: 0px !important;
+  background-color: #FAFAFA;
+  padding: 8px;
+  color: black;
+}
+
+textarea#contact_message {
+  min-height: 120px !important;
+}
+
+label.string.required, label.email.required {
+  color: black;
+  font-size: 20px;
+}
+
+.send-button {
+  transition: color 175ms ease-out;
+  transition: border 175ms ease-out;
+  border-radius: 0px !important;
+  color: $blue !important;
+  background-color: $bg !important;
+  padding: 15px !important;
+  border: 1px solid $blue !important;
+  font-weight: 400 !important;
+  &:hover {
+    color: darken($blue, 20%) !important;
+    border: 1px solid darken($blue, 20%) !important;
+  }
+}
+
+.mailform {
+  padding: 25px;
+  border: 1px solid $blue;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
