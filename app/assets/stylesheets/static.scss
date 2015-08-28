@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $blue: #3498db;
+$red: #FFB0B0;
 
 .blue {
   color: $blue !important;
@@ -103,6 +104,28 @@ a {
   border: 7px solid $blue;
 }
 
+.thick-border-blue {
+  border: 15px solid $blue;
+}
+
 .thick {
   font-weight: 400 !important;
+}
+
+a.disabled {
+  color: $red !important;
+  &:hover {
+    cursor: default !important;
+    color: $red !important;
+  }
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }

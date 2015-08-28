@@ -30,4 +30,8 @@ class StaticController < ApplicationController
   def about
     
   end
+
+  def clients
+    
+  end
 end

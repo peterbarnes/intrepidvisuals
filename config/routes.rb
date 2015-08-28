@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   match '/video',     to: 'static#video',     via: 'get'
   match '/seniors',   to: 'static#seniors',   via: 'get'
   match '/about',     to: 'static#about',     via: 'get'
-  match '/contact',   to: 'contacts#new',      via: 'get' 
+  match '/clients',   to: 'static#clients',   via: 'get'
+  match '/contact',   to: 'contacts#new',     via: 'get' 
   resources "contacts", only: [:new, :create]
 end

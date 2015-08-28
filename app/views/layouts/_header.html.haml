@@ -44,34 +44,41 @@
           VISUALS
 %nav.navbar.navbar-default
   .container
-    .col-md-6.col-md-offset-3
-      .navbar-header
-        %button.navbar-toggle.collapsed{ type: 'button', data: { toggle: 'collapse', target: '.navbar-collapse' } }
-          %span.sr-only Toggle navigation
-          %span.icon-bar
-          %span.icon-bar
-          %span.icon-bar
-      .navbar-collapse.collapse
-        .center-block.clearfix
-          %ul.nav.navbar-nav.text-center
-            %li.dropdown
-              %a.dropdown-toggle.text-center{ href: '#', role: 'button', data: { toggle: 'dropdown' }, aria: { haspopup: "true" }, aria: { expanded: "false" } }
-                PHOTO
-                %span.caret
-              %ul.dropdown-menu
-                %li
-                  %a{ href: '/events' } EVENTS
-                %li
-                  %a{ href: '/portraits' } PORTRAITS
-                %li
-                  %a{ href: '/landscape' } LANDSCAPE
-            %li
-              %a.text-center{ href: '/video' } VIDEO
-            %li
-              %a.text-center{ href: '/about' } ABOUT
-            %li
-              %a.text-center{ href: '/contact' } CONTACT 
-            %li
-              %a.text-center{ href: 'https://instagram.com/intrepidvisuals', target: 'blank' } INSTAGRAM
+    .navbar-header
+      %button.navbar-toggle.collapsed{ type: 'button', data: { toggle: 'collapse', target: '.navbar-collapse' } }
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+    .navbar-collapse.collapse
+      .center-block.clearfix
+        %ul.nav.navbar-nav.text-center
+          %li.dropdown
+            %a.dropdown-toggle.text-center{ href: '#', role: 'button', data: { toggle: 'dropdown' }, aria: { haspopup: "true" }, aria: { expanded: "false" } }
+              PHOTO
+              %span.caret
+            %ul.dropdown-menu
+              %li
+                %a{ href: '/events' } EVENTS
+              %li
+                %a{ href: '/portraits' } PORTRAITS
+              %li
+                %a{ href: '/landscape' } LANDSCAPE
+          %li
+            %a.text-center{ href: '/video' } VIDEO
+          %li
+            %a.text-center{ href: '/about' } ABOUT
+          %li
+            %a.text-center{ href: '/contact' } CONTACT 
+          %li
+            %a.text-center.disabled{ href: '#' } 
+              SENIORS 
+              %i.fa.fa-ban
+          %li
+            %a.text-center.disabled{ href: '#' } 
+              CLIENTS 
+              %i.fa.fa-ban
+          %li
+            %a.text-center{ href: 'https://instagram.com/intrepidvisuals', target: 'blank' } INSTAGRAM
 
     
