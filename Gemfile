@@ -5,6 +5,7 @@ gem 'haml-rails'
 gem 'devise'
 gem 'mongoid'
 gem 'bson_ext'
+gem 'bcrypt'
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'

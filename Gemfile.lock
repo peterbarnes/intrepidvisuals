@@ -181,6 +181,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt
   bson_ext
   byebug
   coffee-rails (~> 4.1.0)
