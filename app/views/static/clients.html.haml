@@ -1,9 +1,11 @@
-- content_for :title, "Intrepid Visuals | Client Galleries"
+- content_for :title, "Intrepid Visuals | Client Galleries"    
 .row
-  .col-md-12
-    %h3.text-center.gray No client galleries
-      
-.row
+  %a{ href: '/greek_festival_8_29_15' }
+    .col-md-3
+      =image_tag('https://farm1.staticflickr.com/684/21013685845_9ee16af59b_q.jpg', width: '100%', height: '100%', class: 'img-responsive center-block thick-border-blue')
+      %h4.pad-bottom.text-center
+        %i.fa.fa-lock 
+        GREEK FESTIVAL
 
 -# GALLERY TEMPLATE
 -#  %a{ href: '/kenzieki_8_18_15' }
@@ -12,6 +14,8 @@
 -#      %h4.pad-bottom.text-center 
 -#        %i.fa.fa-lock
 -#        KENZIE KI
+
+
   
 
 

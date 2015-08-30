@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   resources "contacts", only: [:new, :create]
 
   # CLIENT GALLERIES
-  
+  resources :galleries
+  match '/newgallery', to: 'galleries#new', via: 'get'
+  match '/greek_festival_8_29_15', to: 'galleries#greek_festival_8_29_15', via: 'get'
 end

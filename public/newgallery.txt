@@ -24,7 +24,7 @@
 
 7.) Link the download button to the zip file in the public folder 
 
-	%a.send-button.pull-right{ href: '/kenzieki_8_18_15.zip', target: 'blank', download: '91kenzieki_8_18_15' } 
+	%a.send-button.pull-right{ href: '/kenzieki_8_18_15.zip', target: 'blank', download: 'kenzieki_8_18_15' } 
 		DOWNLOAD ALL
 		%i.fa.fa-download 
 

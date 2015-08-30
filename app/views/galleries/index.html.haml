@@ -1,0 +1,7 @@
+.row
+  - @galleries.each do |g|
+    .col-md-3
+      =image_tag("#{g.images.first}", width: '100%', class: 'img-responsive center-block thick-border-blue')
+      %h4.pad-bottom.text-center
+        %i.fa.fa-lock
+        = "#{g.name}"
