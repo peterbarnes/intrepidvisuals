@@ -1,0 +1,10 @@
+.row
+  .col-md-12
+    %h4.disclaimer.pull-left Please review and download your photos as soon as you can. After 60 days they will be deleted. 
+    %a.send-button.pull-right{ href: '#', target: 'blank', download: '' }
+      DOWNLOAD ALL
+      %i.fa.fa-download
+.row
+  .col-md-4
+    %a.fancybox{ rel: 'group', href: '*flickr-link*'}
+      =image_tag('*flickr-link*', class: 'img-responsive center-block pad-image', width: '100%')

@@ -1,0 +1,33 @@
+1.) Upload all images to a private album on Flickr
+
+2.) In app/controllers/galleries_controller.rb create new method with title of session 
+
+	def kenzieki_8_18_15
+		
+	end
+
+3.) Insert http basic authentication with their username and password
+
+	def kenzieki_8_18_15
+		authenticate_or_request_with_http_basic('Client Galleries') do |username, password|
+			username == 'user' && password == 'pass'
+		end
+	end
+
+4.) In app/config/routes.rb create a route with the SAME title as in the controller
+
+	match '/kenzieki_8_18_15', to: 'galleries#kenzieki_8_18_15', via: 'get'
+
+5.) In app/views/galleries create the client gallery page using private Flickr photos
+
+6.) Create a .zip file with the client's photos and put it in the public folder
+
+7.) Link the download button to the zip file in the public folder 
+
+	%a.send-button.pull-right{ href: '/kenzieki_8_18_15.zip', target: 'blank', download: '91kenzieki_8_18_15' } 
+		DOWNLOAD ALL
+		%i.fa.fa-download 
+
+8.) Photoshop a 500x500px cover image
+
+9.) Add gallery to the client page

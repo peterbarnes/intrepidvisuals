@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  resources :sessions, only: [:new, :create, :destroy]
-  match '/signin',  to: 'sessions#new',     via: 'get'
-  match '/signout', to: 'sessions#destroy', via: 'delete'
 
   root 'static#home'
   match '/events',     to: 'static#events',    via: 'get'
@@ -13,6 +10,7 @@ Rails.application.routes.draw do
   match '/clients',    to: 'static#clients',   via: 'get'
   match '/contact',    to: 'contacts#new',     via: 'get' 
   resources "contacts", only: [:new, :create]
-  resources :galleries
-  match '/newgallery', to: 'galleries#new',    via: 'get'
+
+  # CLIENT GALLERIES
+  
 end

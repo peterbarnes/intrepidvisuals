@@ -1,55 +1,21 @@
 class GalleriesController < ApplicationController
-  before_action :admin_user, only: [:new, :create, :edit, :update, :destroy]
 
-  def new
-    @gallery = Gallery.new
-  end
+  # TO CREATE A NEW GALLERY
+  # MAKE A NEW METHOD WITH THE GALLERY TITLE EX.
+  #
+  # def kenzieki_8_18_15
+  #
+  # end
+  #
+  # THEN INSERT HTTP BASIC AUTHENTICATION WITH USERNAME AND PASSWORD EX.
+  # 
+  # def kenzieki_8_18_15
+  #   authenticate_or_request_with_http_basic('Client Galleries') do |username, password|
+  #     username == 'user' && password == 'pass'
+  #   end
+  # end
+  #
+  # MAKE SURE CLIENT ZIP FILE IS IN public FOLDER
 
-  def create
-    @gallery = Gallery.new(gallery_params)
-    if @gallery.save
-      redirect_to @gallery
-    else
-      render 'new'
-    end
-  end
-
-  def edit
-    @gallery = Gallery.find(params[:id])
-  end
-
-  def update
-    @gallery = Gallery.find(params[:id])
-    if @gallery.update_attributes(gallery_params)
-      redirect_to @gallery
-    else
-      render 'edit'
-    end
-  end
-
-  def show
-    @gallery = Gallery.find(params[:id])
-  end
-
-  def destroy
-    Gallery.find(params[:id]).destroy
-    redirect_to root_url
-  end
-
-  def index
-    @gallery = Gallery.all
-  end
-
-  private 
-
-    def gallery_params
-      params.require(:gallery).permit(:name, :unlock_key, :images)
-    end
-
-    def admin_user
-      unless current_user.admin?
-        redirect_to root_url
-      end
-    end
-
+  
 end
