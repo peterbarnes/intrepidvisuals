@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $blue: #3498db;
 $bg: white;
+$red: #FFB0B0;
 .hidden { display: none; }
 
 /*flash*/
@@ -75,6 +76,16 @@ label.string.required, label.email.required {
   &:hover {
     color: darken($blue, 20%) !important;
     border: 1px solid darken($blue, 20%) !important;
+  }
+}
+
+.disabled-send-button {
+  color: $red !important;
+  border: 1px solid $red !important;
+  &:hover {
+    cursor: default !important;
+    color: $red !important;
+    border: 1px solid $red !important; 
   }
 }
 
