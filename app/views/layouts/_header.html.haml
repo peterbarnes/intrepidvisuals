@@ -74,7 +74,19 @@
             %a.text-center{ href: '/contact' } CONTACT 
           %li
             %a.text-center{ href: '/clients' } CLIENTS
-          %li
-            %a.text-center{ href: 'https://instagram.com/intrepidvisuals', target: 'blank' } INSTAGRAM
+          %li.dropdown
+            %a.dropdown-toggle.text-center{ href: '#', role: 'button', data: { toggle: 'dropdown' }, aria: { haspopup: "true" }, aria: { expanded: "false" } }
+              FOLLOW
+              %span.caret
+            %ul.dropdown-menu
+              %li
+                %a{ href: 'https://www.facebook.com/intrepidvisuals', target: 'blank' } FACEBOOK
+              %li
+                %a{ href: 'https://instagram.com/intrepidvisuals/', target: 'blank' } INSTAGRAM
+              %li
+                %a{ href: 'https://www.flickr.com/intrepidvisuals', target: 'blank' } FLICKR
+              %li
+                %a{ href: 'https://twitter.com/intrepidvisuals', target: 'blank' } TWITTER
+              
 
     
