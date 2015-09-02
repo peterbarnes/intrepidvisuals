@@ -53,6 +53,9 @@
     .navbar-collapse.collapse
       .center-block.clearfix
         %ul.nav.navbar-nav.text-center
+          %li
+            %a.text-center{ href: '/' } 
+              %i.fa.fa-home
           %li.dropdown
             %a.dropdown-toggle.text-center{ href: '#', role: 'button', data: { toggle: 'dropdown' }, aria: { haspopup: "true" }, aria: { expanded: "false" } }
               PHOTO
@@ -66,6 +69,9 @@
                 %a.disabled{ href: '#' } 
                   SENIORS 
                   %i.fa.fa-ban
+              %li.divider{ role: 'separator' }
+              %li
+                %a{ href: '/' } ALL
           %li
             %a.text-center{ href: '/video' } VIDEO
           %li
