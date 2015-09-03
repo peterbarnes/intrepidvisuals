@@ -23,6 +23,12 @@ class GalleriesController < ApplicationController
     end
   end
 
+  def montage_9_2_15
+    authenticate_or_request_with_http_basic('Client Galleries') do |username, password|
+      username == 'montage' && password == 'LOjJ7A2IiV'
+    end
+  end
+
 
   def new
     @gallery = Gallery.new

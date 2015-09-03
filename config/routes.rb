@@ -12,6 +12,6 @@ Rails.application.routes.draw do
 
   # CLIENT GALLERIES
   resources :galleries
-  match '/newgallery', to: 'galleries#new', via: 'get'
   match '/greek_festival_8_29_15', to: 'galleries#greek_festival_8_29_15', via: 'get'
+  match '/montage_9_2_15', to: 'galleries#montage_9_2_15', via: 'get'
 end
