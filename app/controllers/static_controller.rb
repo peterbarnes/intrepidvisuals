@@ -23,6 +23,10 @@ class StaticController < ApplicationController
     
   end
 
+  def fashion
+    
+  end
+
   def contact
     
   end
