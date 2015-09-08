@@ -38,4 +38,8 @@ class StaticController < ApplicationController
   def clients
     
   end
+
+  def blog
+    
+  end
 end
