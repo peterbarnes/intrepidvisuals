@@ -35,6 +35,12 @@ class GalleriesController < ApplicationController
     end
   end
 
+  def carla_seravalli_senior_9_12_15
+    authenticate_or_request_with_http_basic('Client Galleries') do |username, password|
+      username == 'carlaseravalli' && password == 'QM6pSXk4db'
+    end
+  end
+
   def new
     @gallery = Gallery.new
   end
