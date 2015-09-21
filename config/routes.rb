@@ -14,8 +14,11 @@ Rails.application.routes.draw do
 
   # CLIENT GALLERIES
   resources :galleries
-  match '/greek_festival_8_29_15',         to: 'galleries#greek_festival_8_29_15',         via: 'get'
-  match '/montage_9_2_15',                 to: 'galleries#montage_9_2_15',                 via: 'get'
-  match '/eightnlofts_9_10_15',            to: 'galleries#eightnlofts_9_10_15',            via: 'get'
-  match '/carla_seravalli_senior_9_12_15', to: 'galleries#carla_seravalli_senior_9_12_15', via: 'get'
+  match '/greek_festival_8_29_15',          to: 'galleries#greek_festival_8_29_15',          via: 'get'
+  match '/montage_9_2_15',                  to: 'galleries#montage_9_2_15',                  via: 'get'
+  match '/eightnlofts_9_10_15',             to: 'galleries#eightnlofts_9_10_15',             via: 'get'
+  match '/carla_seravalli_senior_9_12_15',  to: 'galleries#carla_seravalli_senior_9_12_15',  via: 'get'
+  match '/brennan_roberson_senior_9_14_15', to: 'galleries#brennan_roberson_senior_9_14_15', via: 'get'
+  match '/chelsea_stewart_senior_9_19_15',  to: 'galleries#chelsea_stewart_senior_9_19_15',  via: 'get'
+  match '/floss_9_21_15',                   to: 'galleries#floss_9_21_15',                   via: 'get'
 end
