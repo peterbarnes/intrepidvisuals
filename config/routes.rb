@@ -21,4 +21,5 @@ Rails.application.routes.draw do
   match '/brennan_roberson_senior_9_14_15', to: 'galleries#brennan_roberson_senior_9_14_15', via: 'get'
   match '/chelsea_stewart_senior_9_19_15',  to: 'galleries#chelsea_stewart_senior_9_19_15',  via: 'get'
   match '/floss_9_21_15',                   to: 'galleries#floss_9_21_15',                   via: 'get'
+  match '/rachel_nesja_10_11_15',           to: 'galleries#rachel_nesja_10_11_15',           via: 'get'
 end
