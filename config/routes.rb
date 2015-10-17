@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   match '/events',     to: 'static#events',    via: 'get'
   match '/portraits',  to: 'static#portraits', via: 'get'
   match '/fashion',    to: 'static#fashion',   via: 'get'
+  match '/stories',    to: 'static#stories',   via: 'get'
   match '/video',      to: 'static#video',     via: 'get'
   match '/seniors',    to: 'static#seniors',   via: 'get'
   match '/about',      to: 'static#about',     via: 'get'
@@ -22,4 +23,7 @@ Rails.application.routes.draw do
   match '/chelsea_stewart_senior_9_19_15',  to: 'galleries#chelsea_stewart_senior_9_19_15',  via: 'get'
   match '/floss_9_21_15',                   to: 'galleries#floss_9_21_15',                   via: 'get'
   match '/rachel_nesja_10_11_15',           to: 'galleries#rachel_nesja_10_11_15',           via: 'get'
+
+  # PHOTO STORIES
+  match '/isolation', to: 'stories#isolation', via: 'get'
 end

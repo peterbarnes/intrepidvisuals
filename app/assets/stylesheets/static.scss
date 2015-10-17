@@ -175,3 +175,9 @@ a.disabled {
 .dropdown-menu {
   background-color: $transparent !important;
 }
+
+.photo-story-link{
+  &:hover{
+    background-color: darken(white, 30%) !important;
+  }
+}

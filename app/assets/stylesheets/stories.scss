@@ -1,0 +1,30 @@
+// Place all the styles related to the stories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$blue: #3498db;
+$bg: white;
+$red: #FFB0B0;
+
+.photo-story{
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 15px solid $blue;
+  .photo {
+    padding: 0px;
+  }
+
+  .subtext{
+    font-size: 25px;
+    color: lighten(black, 30%) !important;
+  }
+
+  .title {
+    margin-top: 0px;
+  }
+
+  &:hover {
+    background-color: darken(white, 10%);
+    transition: background-color 175ms ease-out;
+  }
+}
+

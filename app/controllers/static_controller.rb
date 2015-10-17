@@ -42,4 +42,8 @@ class StaticController < ApplicationController
   def blog
     
   end
+
+  def stories
+    
+  end
 end
