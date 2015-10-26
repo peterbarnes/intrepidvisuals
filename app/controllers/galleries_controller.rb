@@ -17,6 +17,12 @@ class GalleriesController < ApplicationController
   #
   # MAKE SURE CLIENT ZIP FILE IS IN public FOLDER
 
+  def annunciation_greek_orthodox_church
+    authenticate_or_request_with_http_basic('Client Galleries') do |username, password|
+      username == 'agoc' && password == 'ENEO3RTHUp'
+    end
+  end
+
   def rachel_nesja_10_11_15
     authenticate_or_request_with_http_basic('Client Galleries') do |username, password| 
       username == 'rachelnesja' && password == '6NOHuLR5FA'
