@@ -181,3 +181,19 @@ a.disabled {
     background-color: darken(white, 30%) !important;
   }
 }
+
+ul {
+  list-style: none;
+
+  p {
+    margin: 0px !important;
+  }
+
+  .thick-about {
+    font-weight: 400 !important;
+    color: $blue !important;
+    &:hover {
+      color: black !important;
+    }
+  }
+}
