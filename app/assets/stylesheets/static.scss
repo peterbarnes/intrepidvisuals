@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $blue: #3498db;
 $red: #FFB0B0;
-$transparent: rgba(256,256,256,0.85);
+$transparent: rgba(0,0,0,0.7);
 
 .blue {
   color: $blue !important;
@@ -92,9 +92,22 @@ a {
   background-color: $transparent !important;
   border: 0px !important;
   a {
-    color: black !important;
+    color: white !important;
     &:hover {
       color: $blue !important;
+    }
+    .blue {
+      color: $blue !important;
+      &:hover {
+        color: white !important;
+      }
+    }
+  }
+  .fake {
+    color: $blue !important;
+    &:hover {
+      color: $blue !important;
+      cursor: default !important;
     }
   }
 }
@@ -127,16 +140,6 @@ a.disabled {
   }
 }
 
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
-
 .big-top {
   margin-top: 50px;
 }
@@ -156,7 +159,10 @@ a.disabled {
 }
 
 .grid {
-  padding: 2px !important;
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 .no-pad-left {
@@ -197,3 +203,12 @@ ul {
     }
   }
 }
+
+.small-spacing {
+  letter-spacing: -9px;
+}
+
+.orson {
+  color: white !important;
+}
+

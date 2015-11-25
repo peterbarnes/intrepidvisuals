@@ -1,85 +1,40 @@
-.container-fluid.header
-  .row
-    .col-md-6.col-md-offset-3.changecolor
-      %a{ href: '/' }
-        #quote
-        :javascript
-          (function() {
-            var quotes = [
-              {
-                text: "HEY!"
-              },
-              {
-                text: "HELLO!"
-              },
-              {
-                text: "HI!"
-              },
-              {
-                text: "SALUT!"
-              },
-              {
-                text: "HALLO!"
-              },
-              {
-                text: "CIAO!"
-              },
-              {
-                text: "AHOJ!"
-              },
-              {
-                text: "BOG!"
-              },
-              {
-                text: "HOLA!"
-              }
-            ];
-            var quote = quotes[Math.floor(Math.random() * quotes.length)];
-            document.getElementById("quote").innerHTML =
-              '<h1 class="big-title text-center">' + quote.text + '</h1>';
-          })();
-        %h1.text-center.pad-bottom-small
-          INTREPID 
-          %span.blue /
-          VISUALS
 %nav.navbar.navbar-default.navbar-fixed-top
-  .container
+  .container-fluid
     .navbar-header
       %button.navbar-toggle.collapsed{ type: 'button', data: { toggle: 'collapse', target: '.navbar-collapse' } }
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-    .navbar-collapse.collapse
-      .center-block.clearfix
-        %ul.nav.navbar-nav.text-center
+    .navbar-collapse
+      %ul.nav.navbar-nav
+        %li
+          %a.orson{ href: '/' } 
+            intrepidvisuals
+        %li.dropdown
+          %a.dropdown-toggle{ href: '#', role: 'button', data: { toggle: 'dropdown' }, aria: { haspopup: "true" }, aria: { expanded: "false" } }
+            PHOTO
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              %a{ href: '/events' } EVENTS
+            %li
+              %a{ href: '/portraits' } PORTRAITS
+            %li
+              %a{ href: '/seniors' } SENIORS
+            %li
+              %a{ href: '/fashion' } FASHION
+             
           %li
-            %a.text-center{ href: '/' } 
-              %i.fa.fa-home
+            %a{ href: '/video' } VIDEO
+          %li
+            %a{ href: '/about' } ABOUT
+          %li
+            %a{ href: '/contact' } CONTACT 
+          %li
+            %a{ href: '/clients' } CLIENTS
           %li.dropdown
-            %a.dropdown-toggle.text-center{ href: '#', role: 'button', data: { toggle: 'dropdown' }, aria: { haspopup: "true" }, aria: { expanded: "false" } }
-              PHOTO
-              %span.caret
-            %ul.dropdown-menu
-              %li
-                %a{ href: '/events' } EVENTS
-              %li
-                %a{ href: '/portraits' } PORTRAITS
-              %li
-                %a{ href: '/fashion' } FASHION
-              %li.divider{ role: 'separator' }
-              %li
-                %a{ href: '/' } ALL
-          %li
-            %a.text-center{ href: '/video' } VIDEO
-          %li
-            %a.text-center{ href: '/about' } ABOUT
-          %li
-            %a.text-center{ href: '/contact' } CONTACT 
-          %li
-            %a.text-center{ href: '/clients' } CLIENTS
-          %li.dropdown
-            %a.dropdown-toggle.text-center{ href: '#', role: 'button', data: { toggle: 'dropdown' }, aria: { haspopup: "true" }, aria: { expanded: "false" } }
+            %a.dropdown-toggle{ href: '#', role: 'button', data: { toggle: 'dropdown' }, aria: { haspopup: "true" }, aria: { expanded: "false" } }
               FOLLOW
               %span.caret
             %ul.dropdown-menu
@@ -89,8 +44,9 @@
                 %a{ href: 'https://instagram.com/intrepidvisuals/', target: 'blank' } INSTAGRAM
               %li
                 %a{ href: 'https://www.flickr.com/intrepidvisuals', target: 'blank' } FLICKR
-              %li
-                %a{ href: 'https://twitter.com/intrepidvisuals', target: 'blank' } TWITTER
-              
+      %ul.nav.navbar-nav.navbar-right
+        %li 
+          %a.fake.bordered{ href: '#' }
+            =yield(:page_title)
 
     

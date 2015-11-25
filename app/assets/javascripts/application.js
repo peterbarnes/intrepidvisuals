@@ -14,22 +14,6 @@
 //= require jquery_ujs
 //= require_tree .
 
-$(document).ready(function(){
-  
-});
 
-(function() {
-  var quotes = [
-    {
-      text: "HEY"
-    },
-    {
-      text: "HELLO"
-    }
-  ];
-  var quote = quotes[Math.floor(Math.random() * quotes.length)];
-  document.getElementById("quote").innerHTML =
-    '<h1 class="big-title text-center">' + quote.text + '</h1>';
-})();
 
           

@@ -24,13 +24,13 @@
   %meta{ name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' }
   %meta{ name: 'theme-color', content: '#ffffff' }
   %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Raleway:400,200' }
-  %link{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Slab:700' }
   %link{ rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' }
   %link{ href: "/source/jquery.fancybox.css", rel: "stylesheet" }
   %link{ href: "/source/helpers/jquery.fancybox-buttons.css", rel: "stylesheet" }
   %link{ href: "/source/helpers/jquery.fancybox-thumbs.css", rel: "stylesheet" }
   %link{ href: "/monosocialiconsfont-master/sample project/stylesheets.css", rel: "stylesheet" }
   %link{ href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", rel: "stylesheet" }
+  %link{ href: "/webfontkit-20151125-030338/stylesheet.css", rel: "stylesheet" }
   = stylesheet_link_tag    'application', media: 'all'
   = javascript_include_tag 'application'
   %script{ src: "/source/jquery.fancybox.pack.js" }
@@ -43,18 +43,6 @@
 %body.clearfix
   .mainwrapper.clearfix
     = render 'layouts/header'
-    .container.pad-for-footer.clearfix
+    .container-fluid.pad-for-footer.clearfix
       = yield
   = render 'layouts/footer'
-  :javascript
-    $(document).ready(function() {
-      $(".fancybox").fancybox({
-
-        'padding' : 5,
-        'titleShow' : true,
-        helpers : { 
-          title : { type : 'outside' }
-        }
-
-      });
-    });
