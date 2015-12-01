@@ -46,4 +46,8 @@ class StaticController < ApplicationController
   def stories
     
   end
+
+  def lights
+    
+  end
 end

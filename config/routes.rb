@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   root 'static#home'
-  match '/events',     to: 'static#events',    via: 'get'
+  match '/concerts',     to: 'static#events',    via: 'get'
   match '/portraits',  to: 'static#portraits', via: 'get'
   match '/fashion',    to: 'static#fashion',   via: 'get'
   match '/stories',    to: 'static#stories',   via: 'get'
@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   match '/clients',    to: 'static#clients',   via: 'get'
   match '/contact',    to: 'contacts#new',     via: 'get' 
   match '/blog',       to: 'static#blog',      via: 'get'
+  match '/lights',     to: 'static#lights',    via: 'get'
   resources "contacts", only: [:new, :create]
 
   # CLIENT GALLERIES
