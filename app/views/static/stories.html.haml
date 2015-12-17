@@ -1,19 +1,10 @@
 - content_for :title, "Intrepid Visuals - Photo Stories"
 - content_for :description, "Photographs have an inherit ability to tell a story. Often times I take a lot of time to take pictures that convey a certain meaning, and put them together to form a photo story."
 .row
-  .col-md-12.grid
-    %a.photo-story-link{href: '#'}
-      .photo-story.clearfix
-        %h1.title 
-          ISOLATION
-          %span.short-spacing.subtext 
-            %em stress, anxiety, depression
-        .col-md-4.photo
-          =image_tag('https://farm6.staticflickr.com/5792/20481853944_72435bbba9_b.jpg', class: 'img-responsive center-block', width: '100%')
-        .col-md-4.photo
-          =image_tag('https://farm6.staticflickr.com/5792/20481853944_72435bbba9_b.jpg', class: 'img-responsive center-block', width: '100%')
-        .col-md-4.photo
-          =image_tag('https://farm6.staticflickr.com/5792/20481853944_72435bbba9_b.jpg', class: 'img-responsive center-block', width: '100%')
+  .col-md-4.grid
+    %a.darken{ href: '/lights' }
+      =image_tag('lightsthumbnail.jpg', width: '100%', class: 'img-responsive center-block')
+    
       
 
 

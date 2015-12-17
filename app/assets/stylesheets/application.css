@@ -48,6 +48,10 @@
   font-weight: 400 !important;
  }
 
+ .thin {
+  font-weight: 200 !important;
+ }
+
  #wrapper {
 
  width:500px;
