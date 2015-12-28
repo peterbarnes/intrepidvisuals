@@ -24,8 +24,13 @@
  }
 
  * {
-  font-family: 'Raleway' !important;
+  font-family: 'fabricaregular' !important;
+  letter-spacing: -.4px !important;
   font-weight: 200;
+ }
+
+ .orson {
+  letter-spacing: 0px !important;
  }
 
  .fa {

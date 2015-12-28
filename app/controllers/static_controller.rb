@@ -50,4 +50,8 @@ class StaticController < ApplicationController
   def lights
     
   end
+
+  def in_review_2015
+    
+  end
 end

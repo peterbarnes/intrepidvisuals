@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   match '/contact',    to: 'contacts#new',     via: 'get' 
   match '/blog',       to: 'static#blog',      via: 'get'
   match '/lights',     to: 'static#lights',    via: 'get'
+  match '/2015',       to: 'static#in_review_2015',      via: 'get'
   resources "contacts", only: [:new, :create]
 
   # CLIENT GALLERIES
