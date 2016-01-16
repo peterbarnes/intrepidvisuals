@@ -16,7 +16,6 @@
 
  body, html {
   height: 100% !important;
-  padding-top: 25px;
  }
 
  iframe {
@@ -110,4 +109,8 @@ a.darken:hover img {
 
 .thick-text {
   font-weight: 400px !important;
+}
+
+li {
+  display: inline !important;
 }

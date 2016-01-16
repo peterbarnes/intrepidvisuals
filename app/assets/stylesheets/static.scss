@@ -15,7 +15,7 @@ a {
     color: $blue !important;
     text-decoration: none !important;
   }
-  transition: color 175ms ease-out;
+  transition: color 75ms ease-out;
   &:active {
     color: $blue !important;
     text-decoration: none !important; 
@@ -159,9 +159,9 @@ a.disabled {
 }
 
 .grid {
-  padding-top: 0px !important;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  padding-top: 8px !important;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
   padding-bottom: 0px !important;
 }
 
@@ -206,10 +206,6 @@ ul {
 
 .small-spacing {
   letter-spacing: -9px;
-}
-
-.orson {
-  color: white !important;
 }
 
 .no-pad {
@@ -265,4 +261,21 @@ ul {
 
 .adjust-line {
   line-height: 23px !important;
+}
+
+.pushup-for-header {
+  padding-top: 45px;
+}
+
+.inline{
+  display: inline !important;
+}
+
+.spread {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.pushdown {
+  margin-bottom: 15px;
 }

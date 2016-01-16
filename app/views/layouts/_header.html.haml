@@ -1,49 +1,31 @@
-%nav.navbar.navbar-default.navbar-fixed-top
-  .container-fluid
-    .navbar-header
-      %button.navbar-toggle.collapsed{ type: 'button', data: { toggle: 'collapse', target: '.navbar-collapse' } }
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-    .navbar-collapse
-      %ul.nav.navbar-nav
-        %li
-          %a.orson{ href: '/' } 
-            intrepidvisuals
-        %li.dropdown
-          %a.dropdown-toggle{ href: '#', role: 'button', data: { toggle: 'dropdown' }, aria: { haspopup: "true" }, aria: { expanded: "false" } }
-            PHOTO
-            %span.caret
-          %ul.dropdown-menu
-            %li
-              %a.thin{ href: '/concerts' } CONCERTS
-            %li
-              %a.thin{ href: '/portraits' } PORTRAITS
-            %li.divider
-            %li
-              %a.thin{ href: '/features' } FEATURES
-             
-          %li
-            %a{ href: '/video' } VIDEO
-          %li
-            %a{ href: '/about' } ABOUT
-          %li
-            %a{ href: '/contact' } CONTACT 
-          %li
-            %a{ href: '/clients' } CLIENTS
-          %li.dropdown
-            %a.dropdown-toggle{ href: '#', role: 'button', data: { toggle: 'dropdown' }, aria: { haspopup: "true" }, aria: { expanded: "false" } }
-              FOLLOW
-              %span.caret
-            %ul.dropdown-menu
-              %li
-                %a.thin{ href: 'https://www.facebook.com/intrepidvisuals', target: 'blank' } FACEBOOK
-              %li
-                %a.thin{ href: 'https://instagram.com/intrepidvisuals/', target: 'blank' } INSTAGRAM
-      %ul.nav.navbar-nav.navbar-right
-        %li 
-          %a.fake.bordered.thick{ href: '#' }
-            =yield(:page_title)
+.container
+  .row
+    .col-md-12.pushup-for-header
+      %a{ href: '/' }
+        =image_tag('logo.png', width: '60%', class: 'img-responsive center-block')
+    .col-md-12.pushdown
+      %h4.text-center 
+        %span.spread
+          %a{ href: '/concerts' } CONCERTS
+        %span.spread
+          %a{ href: '/portraits' } PORTRAITS
+        %span.spread
+          %a{ href: '/video' } VIDEO
+        %span.spread
+          %a{ href: '/features' } FEATURES
+        %span.spread
+          %a{ href: '/about' } ABOUT
+        %span.spread
+          %a{ href: '/contact' } CONTACT
+        %span.spread
+          %a{ href: '/clients' } CLIENTS
+
+
+
+   
+
+
+
+
 
     

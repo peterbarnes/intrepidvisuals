@@ -42,9 +42,9 @@
   = csrf_meta_tags
   %meta{ name: 'google-site-verification', content: 'RzHivMFeO90EQ_zcUMU6y_LskLaHQEkafRAR5vj-Nks' }
 %body.clearfix
+  = render 'layouts/header'
   .mainwrapper.clearfix
-    = render 'layouts/header'
-    .container-fluid.pad-for-footer.clearfix
+    .container.pad-for-footer.clearfix
       = yield
   = render 'layouts/footer'
   :javascript
